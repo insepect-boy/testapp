@@ -1,2 +1,2 @@
 # testapp
-// Testing windows and android app
+Testing windows and android app
