@@ -17,12 +17,18 @@ class LoginPage extends StatelessWidget {
     return Future.delayed(loadingTime).then((value) => null);
   }
 
+  //sign up
+  Future<String?> _signupUser(SignupData data) {
+    return Future.delayed(loadingTime).then((value) => null);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: FlutterLogin(
         onLogin: _authUser, 
-        onRecoverPassword: _recoverPassword
+        onRecoverPassword: _recoverPassword,
+        onSignup: _signupUser,
         ),
     );
   }
